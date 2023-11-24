@@ -25,13 +25,14 @@ igs.set('views','../igs/backend/src/views');
 
 igs.use(express.static('../igs/backend/src/public'))
 igs.use(express.static('../igs/backend/src/views/js'))
+igs.use(express.static('../igs/frontend'))
 
 igs.get('/documents', (req,res) => {
     res.render('index.ejs');
 });
 
 igs.get('/', (req,res) => {
-    res.send('Hola desde la API igs desplegada :D');
+    res.render('index.html');
 });
 
 
