@@ -31,7 +31,7 @@ igs.get('/documents', (req,res) => {
 });
 
 igs.get('/', (req,res) => {
-    res.render('index.html');
+    res.send('Hola desde la API igs desplegada :D');
 });
 
 
