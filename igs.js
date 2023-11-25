@@ -32,11 +32,6 @@ igs.get('/documents', (req,res) => {
     res.render('index.ejs');
 });
 
-igs.get('/', (req,res) => {
-    res.render('../igs-copia/frontend/index.html');
-});
-
-
 
 igs.use(express.json()); 
 
