@@ -32,7 +32,7 @@ igs.get('/documents', (req,res) => {
 });
 
 igs.get('/', (req,res) => {
-    res.render('index.html');
+    res.render('../igs-copia/frontend/index.html');
 });
 
 
